@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Greetings from './components/Greetings';
+//import Counter from './components/Counter'
+import MyForm from './components/MyForm'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => {
+  const onClick = (name : string) => {
+    console.log(`${name} says hello`)
+  }
+
+  const onSubmit = (form: { name: string; description: string }) => {
+    console.log(form)
+  }
+  return(
+    <>
+      <Greetings name="Kyunghyun kim" optional="test" mark="ttt" onClick={onClick}/>;
+      {/* //<Counter/> */}
+      <MyForm onSubmit={onSubmit}/>
+    </>
+    
+  ) 
+    
+};
 
 export default App;
