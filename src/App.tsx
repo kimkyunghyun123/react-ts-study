@@ -19,6 +19,7 @@ const App: React.FC = () => {
       <MyForm onSubmit={onSubmit}/>
       <SampleProvider>
         <ReducerSample/>
+        <div>test</div>
       </SampleProvider>
       
     </>
