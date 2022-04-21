@@ -13,6 +13,7 @@ function reducer(state: number, action: Action): number {
   }
 }
 //test
+//test22222
 function Counter() {
   const [count, dispatch] = useReducer(reducer, 0);
   const onIncrease = () => dispatch({ type: "INCREASE" });
