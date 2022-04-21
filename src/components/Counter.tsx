@@ -25,6 +25,11 @@ function Counter() {
       <button onClick={onDecrease}>-1</button>
       <button onClick={onDecrease}>-1</button>
       <button onClick={onDecrease}>-1</button>
+
+      <button onClick={onDecrease}>-1</button>
+      <button onClick={onDecrease}>-1</button>
+      <button onClick={onDecrease}>-1</button>
+      <button onClick={onDecrease}>-1</button>
     </div>
   );
 }
