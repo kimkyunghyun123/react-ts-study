@@ -23,6 +23,8 @@ function Counter() {
       {count}
       <button onClick={onIncrease}>+1</button>
       <button onClick={onDecrease}>-1</button>
+      <button onClick={onDecrease}>-1</button>
+      <button onClick={onDecrease}>-1</button>
     </div>
   );
 }
